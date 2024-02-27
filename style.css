@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+/*.container {
+    border: 2px solid red;
+}*/
+.navbar, .navbar-mob{
+    background-color: rgba(6, 6, 255, 0.882);
+    
+    
+}
+.navbar{
+    position: sticky;
+    top: 0;
+}
+.navbar > a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 10px 10px 50px;
+    float: left;
+}
+.navbar > ul {
+    list-style: none;
+    float: right;
+}
+.navbar-mob > ul {
+    list-style: none;
+}
+.navbar > ul > li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0px 20px;
+}
+.navbar-mob > ul > li{
+        line-height: 30px;
+        padding: 0px 20px;
+}
+.navbar > ul:last-child{
+    padding-right: 100px;
+}
+.navbar > ul > li > a,
+.navbar-mob > ul > li > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.navbar > ul > li:hover,
+.navbar-mob > ul > li:hover{
+    background-color: rgba(46, 44, 44, 0.808);
+}
+.navbar::after{
+    content: " ";
+    display: block;
+    clear: both;
+    *zoom: 1;
+}
+.navbar-mob,
+.hamburger-btn{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+/* mobile , tablet , etc.*/
+@media  screen and (max-width: 600px){
+    .mobile{
+        display: block;
+    }
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgba(212, 199, 199, 0.536);
+    }
+    .navbar > a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        float: left;
+    }
+    .navbar-mob,
+  .hamburger-btn{
+    display: block;
+    
+}
+
+
+.navbar > ul{
+    display: none;
+}
+#mob-menu{
+    display: none;
+}
+.hamburger-btn > .fa-xmark{
+    display: none;
+}
+.fa-bars {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+}
+.fa-xmark {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+.fa-bars{
+    z-index: 1;
+}
+.fa-xmark{
+    z-index: 2;
+}
+
+
+.find-me{
+    display: none;
+}
+
+.home-box{
+    display: none;
+}
+.page-two{
+    display: none;
+}
+html , body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+}
+
+.home-box{
+    width: 700px;
+    padding: 100px;
+}
+.home-image {
+    margin-left: 1000px;
+    margin-top: -400px;
+
+    
+}
+.home-box-content{
+    padding: 70px;
+    
+}
+.home-box-content > h2, h3,p{
+    margin: 10px;
+} 
+.social-btn > a{
+    box-sizing: border-box;
+    margin: 10px;
+    color: rgb(39, 39, 133);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(144, 142, 142, 0.688);
+}
+
+.page-box{
+    display: inline-block;
+    
+}
+.page-box{
+        
+        box-sizing: border-box;
+        box-shadow: 0px 3px 10px 0px grey;
+        border-radius: 10px;
+        padding: 0px 20px;
+        margin: 50px;
+
+}
+.page-box > ul > li{
+    list-style: none;
+    padding-bottom: 10px;
+   
+}
+.find-me{
+    margin-left: 700px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+  
+}
+.find-me a > i{
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: rgb(11, 0, 223);
+    width: 50px;
+    color: white;
+    box-shadow: 0px 5px 0px 0px grey;
+    height: 50px;
+    padding: 15px 10px 10px 15px;
+    
+}
+.page-two{
+    color: rgba(55, 47, 47, 0.726);
+}
+/*.home-page{
+    background-color: rgba(59, 56, 56, 0.64);
+}*/
+.mob-image > img{
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 2, 2, 0.703);
+    background-color: skyblue;
+    border-radius: 100px;
+}
+.mob-me{
+    box-sizing: border-box;
+    margin-left: 60px;
+    width: 230px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+}
+.mob-box{
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+    width: 170px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 90px;
+    
+}
+.mob-box > ul{
+    list-style: none;
+}
+.mob-box > ul > li,h1{
+    padding: 10px;
+}
+.About{
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+    width: 280px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.mobile-icon > a > i{
+    box-sizing: border-box;
+    
+    width: 30px;
+    height: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    text-align: center;
+    padding: 5px;
+    color: rgb(225, 221, 221);
+    background-color: rgb(0, 11, 132);
+    border-radius: 30px;
+    
+}
+.mobile-icon > a{
+    margin-left: 40px;
+}
